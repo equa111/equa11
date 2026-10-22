@@ -12,11 +12,19 @@ body{
     padding:50px;
 }
 
+.games{
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
 a{
-    display:block;
-    width:250px;
-    margin:20px auto;
-    padding:15px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60px;
     background:#2563eb;
     color:white;
     text-decoration:none;
@@ -33,6 +41,8 @@ a:hover{
 <body>
 
 <h1>cwelowskie gierki</h1>
+
+<div class="games">
 
 <a href="dodge/">Dodge and Deflect</a>
 <a href="tetris/">tetris</a>
@@ -52,6 +62,8 @@ a:hover{
 <a href="bob_the_robber_5/">Bob The Robber 5</a>
 <a href="amongus/">amongus</a>
 <a href="brawl/">Brawl Stars</a>
+
+</div>
 
 </body>
 </html>
