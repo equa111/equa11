@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>gierki babki domina</title>
+
+<style>
+body{
+    background:#121212;
+    color:white;
+    font-family:Arial;
+    text-align:center;
+    padding:50px;
+}
+
+.games{
+    max-width:1100px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:20px;
+}
+
+
+
+
+.big:hover{
+background: #c00000;
+}
+
+
+a{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:60px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:10px;
+}
+
+a:hover{
+    background:#3b82f6;
+}
+
+
+#gameSearch {
+  display: block;
+  width: 90%;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 14px;
+  box-sizing: border-box;
+  background: #181818;
+  color: white;
+  border: 2px solid #444;
+  border-radius: 12px;
+  font-size: 17px;
+  outline: none;
+}
+
+#gameSearch:focus {
+  border-color: #888;
+}
+
+#gameSearch::placeholder {
+  color: #999;
+}
+
+.games a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px 0;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<h1>gierki babki domina</h1>
+
+
+
+<input type="text" id="gameSearch" placeholder="Szukaj babki domina">
+
+
+<div class="games">
+
+
+<br>
+<a href="https://batxyt.github.io/GryZBabka/">Mokra Sraka Najka</a>
+<br>
+
+<a href="minecraft/">Minecraft</a>
+<a href="SFK/">SFK</a>
+<a href="fnaf/">Freddy Five Bear</a>
+<a href="dodge/">Dodge and Deflect</a>
+<a href="tetris/">Tetris</a>
+<a href="geometry_dash_lite/">Geometry Dash Lite</a>
+<a href="undertale/">Undertale</a>
+<a href="duke_nuke_3d/">Duke Nukem 3d</a>
+<a href="ddlc/">Doki Doki Literature Club</a>
+<a href="baldi_basics/">Baldi Basics Remastered</a>
+<a href="angry_birds/">Angry Birds</a>
+<a href="angry_birds2/">Angry Birds 2</a>
+<a href="bad_piggies/">Bad Piggies</a>
+<a href="angry_birds_epic/">Angry Birds Epic</a>
+<a href="amongus/">amongus</a>
+<a href="brawl/">Brawl Stars</a>
+<a href="truck/">Indian Truck Driving</a>
+<a href="up/">Only Up</a>
+<a href="saul/">Saul Goodman</a>
+<a href="WBWWB/">We Become What We Behold</a>
+<a href="slope3/">Slope</a>
+<a href="sam/">Shift At Midnight</a>
+<a href="ss/">Subway Surfers</a>
+<a href="level_devil/">Level Devil</a>
+<a href="jack_smith/">Jack Smith</a>
+<a href="re/">Resident Evil 3</a>
+<a href="earn_to_die/">Earn To Die</a>
+<a href="pvzm/">Plants vs Zombies Modded</a>
+<a href="pvz2/">Plants vs Zombies 2</a>
+<a href="raft_wars/">Raft Wars</a>
+<a href="scooby/">ScoobyDoo Creepy Run</a>
+<a href="happy_wheels/">Happy Wheels</a>
+
+
+</div>
+
+
+
+<script>
+const search = document.getElementById("gameSearch");
+const games = document.querySelectorAll(".games a");
+
+search.addEventListener("input", function () {
+  const query = this.value.toLowerCase().trim();
+
+  games.forEach(game => {
+    const name = game.textContent.toLowerCase();
+
+game.style.display = name.includes(query)
+  ? "flex"
+  : "none";
+  });
+});
+</script>
+
+
+
+</body>
+</html>
