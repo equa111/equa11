@@ -68,10 +68,11 @@ a:hover{
 }
 
 .games a {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 8px 0;
 }
-
 
 
 </style>
@@ -107,7 +108,7 @@ a:hover{
 <a href="angry_birds/">Angry Birds</a>
 <a href="angry_birds2/">Angry Birds 2</a>
 <a href="bad_piggies/">Bad Piggies</a>
-<a href="bob_the_robber_5/">Angry Birds Epic</a>
+<a href="angry_birds_epic/">Angry Birds Epic</a>
 <a href="amongus/">amongus</a>
 <a href="brawl/">Brawl Stars</a>
 <a href="truck/">Indian Truck Driving</a>
@@ -118,6 +119,7 @@ a:hover{
 <a href="sam/">Shift At Midnight</a>
 <a href="ss/">Subway Surfers</a>
 <a href="level_devil/">Level Devil</a>
+<a href="jack_smith/">Jack Smith</a>
 
 
 
@@ -136,9 +138,9 @@ search.addEventListener("input", function () {
   games.forEach(game => {
     const name = game.textContent.toLowerCase();
 
-    game.style.display = name.includes(query)
-      ? "block"
-      : "none";
+game.style.display = name.includes(query)
+  ? "flex"
+  : "none";
   });
 });
 </script>
